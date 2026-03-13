@@ -5,21 +5,21 @@
 class Anyq < Formula
   desc "Unified jq-syntax query tool for JSON, YAML, and TOML"
   homepage "https://github.com/troll-warlord/anyq"
-  version "0.0.2"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/troll-warlord/anyq/releases/download/v0.0.2/anyq_0.0.2_darwin_amd64.tar.gz"
-      sha256 "3607248442118379567733663b3680208f57cd9030573628ffca5919371887dd"
+      url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_darwin_amd64.tar.gz"
+      sha256 "8662d8c600d4824220e8a6f03095731222bc0eac1464a8c6670e21f07ef7c9ad"
 
       define_method(:install) do
         bin.install "anyq"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/troll-warlord/anyq/releases/download/v0.0.2/anyq_0.0.2_darwin_arm64.tar.gz"
-      sha256 "41e910e2831913701656633d7de1129b5a2bbf987a4821a56365b3b8ee58dfb0"
+      url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_darwin_arm64.tar.gz"
+      sha256 "15acf659e89a5a570625a134d31f180ac5b28f9072c1d90a24629a9f1c14fa55"
 
       define_method(:install) do
         bin.install "anyq"
@@ -29,15 +29,15 @@ class Anyq < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/troll-warlord/anyq/releases/download/v0.0.2/anyq_0.0.2_linux_amd64.tar.gz"
-      sha256 "b4fc8a78ddf861e859333352f3ee9f8d515549363dfe2e4abdbd9ec193ded541"
+      url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_linux_amd64.tar.gz"
+      sha256 "d20490267f9ffbf4904ae190cd7bd007874bc0f02c52d57ac90ee8d6052a45dd"
       define_method(:install) do
         bin.install "anyq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/troll-warlord/anyq/releases/download/v0.0.2/anyq_0.0.2_linux_arm64.tar.gz"
-      sha256 "97acbce7d1f47f898e69e572d128cf41d3eaabe5c122e2dcfe8ea7d623317b6e"
+      url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_linux_arm64.tar.gz"
+      sha256 "d7e3b6a1cab7d5c428b046c0495cf1d3da58150c963e4cad669de6058abda599"
       define_method(:install) do
         bin.install "anyq"
       end
