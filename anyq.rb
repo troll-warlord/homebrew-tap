@@ -11,7 +11,7 @@ class Anyq < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d626b6f4d2bf2cbd87121d62316b0d2f50b260890b4e5f0019fa3a18d280d6ba"
+      sha256 "23f3e8108ce41a1e489df9f3429f0a163074c9085a903e3960901adc5293bb7e"
 
       define_method(:install) do
         bin.install "anyq"
@@ -19,7 +19,7 @@ class Anyq < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9e58c21a37d06e6fd415653abd765aed980267e4740804117ca52c0d648c72f0"
+      sha256 "cb540e9d006f5737b2cfb4b5648a9e575747dd32021771b4dda07b16f5083e9b"
 
       define_method(:install) do
         bin.install "anyq"
@@ -30,14 +30,14 @@ class Anyq < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_linux_amd64.tar.gz"
-      sha256 "8e2c55c3f7cc0667431e53be2b61fd1da83324a15ef5f41f118a123547aaef3c"
+      sha256 "2ff1b56c633376e1de0bdbcb5c582f01a74379936b665272a20fcd6908e0ae4b"
       define_method(:install) do
         bin.install "anyq"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/troll-warlord/anyq/releases/download/v0.1.0/anyq_0.1.0_linux_arm64.tar.gz"
-      sha256 "dc675e9724a93d6123b0bb14cb51b1c5d52bba8304925fd4e8a6ac8f0566f6fe"
+      sha256 "51b66bbf3179fcd9ed70a122672f741dd481d9e3590f39e9b554fe7c6a2b1eae"
       define_method(:install) do
         bin.install "anyq"
       end
